@@ -36,3 +36,4 @@ If you'd like to contribute to the development of this script, feel free to fork
 ## License
 
 This script is licensed under the MIT License. See the LICENSE file for details.
+
