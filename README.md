@@ -1,6 +1,8 @@
 # markdown_include
 
-This is a simple Python script that processes Markdown files by including the contents of other Markdown files. The script takes in a Markdown file as input, looks for lines that are similar to `<!-- include (filename) -->` and treats them as include directives. For each `include` directive, the script reads the specified file and writes its contents to the output file. The result is a new Markdown file that includes the contents of all included files.
+This is a simple Python script that processes Markdown files by including the contents of other Markdown files.
+
+The script takes in a Markdown file as input, looks for lines that are similar to `<!-- include (filename) -->` (Parentheses are necessary to identify the path) and treats them as include directives. For each include directive, the script reads the specified file and writes its contents to the output file. The result is a new Markdown file that includes the contents of all included files.
 
 ## Usage
 
@@ -15,7 +17,7 @@ This script can be added as a command to the `$PATH` for direct invocation
 ## Features
 
 + Processes Markdown files by including the contents of other Markdown files
-+ Supports include directives in the format of `<!-- include file.md -->`
++ Supports include directives in the format of `<!-- include (filename) -->` (Parentheses are necessary to identify the path)
 + Outputs a new Markdown file that includes the contents of the included files
 + Takes in input and output file names as command-line arguments
 
@@ -36,4 +38,3 @@ If you'd like to contribute to the development of this script, feel free to fork
 ## License
 
 This script is licensed under the MIT License. See the LICENSE file for details.
-
