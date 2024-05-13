@@ -2,33 +2,7 @@
 
 This is a simple Python script that processes Markdown files by including the contents of other Markdown files.
 
-The script takes in a Markdown file as input, looks for lines that are similar to `<!-- include (filename) -->` (Parentheses are necessary to identify the path) and treats them as include directives. For each include directive, the script reads the specified file and writes its contents to the output file. The result is a new Markdown file that includes the contents of all included files.
-
-## Github
-
-<https://github.com/hxtmike/markdown_include>
-
-## Usage
-
-To use the script, simply pass the input file name and the output file name as command-line arguments. The script will process the input file, generate the output file, and exit. Here's an example of how to run the script:
-
-```shell
-md_incl input_file.md output_file.md
-```
-
-This script will be added as a command after installation
-
-## Features
-
-+ Processes Markdown files by including the contents of other Markdown files
-+ Supports include directives in the format of `<!-- include (filename) -->` (Parentheses are necessary to identify the path)
-+ Outputs a new Markdown file that includes the contents of the included files
-+ Takes in input and output file names as command-line arguments
-
-## Requirements
-
-+ `>Python 3.8`
-+ A text editor to modify the input and included files
+The script takes in a Markdown file as input, looks for lines that are similar to `<!-- include (file.md) -->` (Parentheses are necessary to identify the path) and treats them as include directives. For each include directive, the script reads the specified file and writes its contents to the output file. The result is a new Markdown file that includes the contents of all included files.
 
 ## Installation
 
@@ -36,7 +10,28 @@ This script will be added as a command after installation
 pip install md-incl
 ```
 
+The `md_incl` command will be added to the `$PATH` after installation.
+
 It could be used in some building system like `Makefile`, which allows for the automatic assembly of large and complex reports and papers.
+
+## Usage
+
+1. put filenames of directives in the format of `<!-- include (file.md) -->` in your main markdown file
+
+2. simply pass the input file name and the output file name as command-line arguments. The script will process the input file, generate the output file, and exit. Here's an example of how to run the script:
+
+```shell
+md_incl input_file.md output_file.md
+```
+
+## Requirements
+
++ `>Python 3.8`
++ A text editor to modify the input and included files
+
+## Github
+
+<https://github.com/hxtmike/markdown_include>
 
 ## Contributions
 
