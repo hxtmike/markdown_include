@@ -12,8 +12,6 @@ pip install md-incl
 
 The `md_incl` command will be added to the `$PATH` after installation.
 
-It could be used in some building system like `Makefile`, which allows for the automatic assembly of large and complex reports and papers.
-
 ## Usage
 
 1. put filenames of directives in the format of `<!-- include (file.md) -->` in your main markdown file
@@ -23,6 +21,8 @@ It could be used in some building system like `Makefile`, which allows for the a
 ```shell
 md_incl input_file.md output_file.md
 ```
+
+It could be used in some building system like `Makefile`, which allows for the automatic assembly of large and complex reports and papers.
 
 ## Requirements
 

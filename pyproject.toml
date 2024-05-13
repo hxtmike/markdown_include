@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = 'md_incl'
-version = '0.0.2'
+version = '0.0.4'
 authors = [{ name = "Sean Han", email = "xiaotian.han91@gmail.com" }]
 description = "processes a Markdown file by including the contents of other Markdown files"
 readme = "README.md"
