@@ -29,10 +29,6 @@ md_incl input_file.md output_file.md
 + `>Python 3.8`
 + A text editor to modify the input and included files
 
-## Github
-
-<https://github.com/hxtmike/markdown_include>
-
 ## Contributions
 
 If you'd like to contribute to the development of this script, feel free to fork the repository and submit a pull request. I'll be happy to review your changes and merge them into the main codebase.
