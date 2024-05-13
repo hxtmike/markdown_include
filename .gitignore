@@ -1,2 +1,7 @@
-.test/
+__pycache__/
 .python-version
+
+dist/
+*.egg-info/
+.installed.cfg
+*.egg

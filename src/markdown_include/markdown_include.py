@@ -4,7 +4,6 @@ from typing import Optional
 import re
 import sys
 
-
 def markdown_include(inputFile: str, outputFile: Optional[str] = None) -> None:
     # define default output filename
     if outputFile is None:
@@ -50,18 +49,3 @@ def markdown_include(inputFile: str, outputFile: Optional[str] = None) -> None:
 
     with open(outputFile, 'w') as file:
         file.write(content)
-
-def main():
-    lenarg = len(sys.argv)
-    if lenarg < 2 or lenarg > 3:
-        print("Unexcepted Error: the argument should be '<input file> <output file>'")
-        sys.exit()
-
-    if lenarg == 2:
-        markdown_include(sys.argv[1])
-
-    if lenarg == 3:
-        markdown_include(sys.argv[1], sys.argv[2])
-
-if __name__ == '__main__':
-    main()

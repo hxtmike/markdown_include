@@ -4,7 +4,7 @@
 
 Some text
 
-some test in b.md
+<!-- include (./include.md) -->
 
 ## subtitle 2
 

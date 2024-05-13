@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'md_incl'
+version = '0.0.1'
+authors = [{ name = "Sean Han", email = "xiaotian.han91@gmail.com" }]
+description = "processes a Markdown file by including the contents of other Markdown files"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/hxtmike/markdown_include"
+Issues = "https://github.com/hxtmike/markdown_include/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"] # ["."] by default
+
+[project.scripts]
+md_incl = 'markdown_include.__main__:main'
